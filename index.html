@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Լոնդոն Բաս Մանկապարտեզ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Armenian:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="navbar-logo">
+                    <img src="media/londonbuslogo.jpg" alt="London Bus Logo">
+                </span>
+                LONDON BUS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Գլխավոր</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Մեր Մասին</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#groups">Խմբեր</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#admission">Ընդունելություն</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Կոնտակտներ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#send" onclick="openModal()">Ուղարկել հայտ</a></li>
+                </ul>
+                    <div class="d-flex">
+                        <button class="btn lang-btn" type="button" id="languageDropdown" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="/media/Armenia.svg" class="navbar-logo">
+                        </button>
+                        <button class="btn lang-btn" type="button" id="languageDropdown"> <img src="/media/russia.png"
+                                class="navbar-logo"></button>
+                        <button class="btn lang-btn" type="button" id="languageDropdown" data-bs-toggle="dropdown"
+                            aria-expanded="false"> <img src="/media/usa.png" class="navbar-logo"></button>
+                    </div>
+            </div>
+        </div>
+    </nav>
+    <header id="home" class="hero-section" style="background-image: url(/media/background1.webp);">
+        <div class="text-center hero-content">
+            <h2>Փոքրիկ քայլեր, մեծ հայտնագործություններ</h2>
+            <a href="#admission" class="btn btn-primary">եկեք ծանոթանանք</a>
+        </div>
+
+    </header>
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Մանկապարտեզ LONDON BUS</h2>
+            <div class="image-text-container">
+                <img src="media/child2.webp" class="about-image" alt="Children">
+                <div class="text-content">
+                    <p class="lead text-muted">Զարգացող աշխարհի հետ համահունչ քայլելու համար լավագույն միջոցը
+                        շարունակական կրթությունն է, որի հիմքը դրվում է նախակրթարանում։ Հենց այստեղ է երեխան սովորում՝
+                        հարգել, սիրել, հոգ տանել, կիսել, պաշտպանել՝ հիմք ընդունելով հիմնարար գիտելիքների՝ խոսքի,
+                        տրամաբանության, ստեղծագործական հմտությունների, սոցիումի և ֆիզիկական աճի զարգացմանը։</p>
+                    <p class="lead text-muted">Բարի գալուստ մեր «Լոնդոն Բաս» մանկապարտեզ՝ մի վայր, որտեղ փոքրիկ սրտերը
+                        ծաղկում են, և յուրաքանչյուր օր լի է բացահայտումներով, ուրախությամբ և ուսումնառությամբ։</p>
+                    <p class="lead text-muted">Մենք հավատում ենք, որ երեխայի զարգացման ամենակարևոր տարիները պետք է լինեն
+                        լի սիրով, հոգատարությամբ և զարգացնող միջավայրով։ Մեր բազմամասնագիտական թիմը ստեղծում է առողջ և
+                        բարենպաստ միջավայր, որը նպաստում է երեխայի բազմակիր մտածողության ֆունկցիաների, ինչպես նաև
+                        իմացական գործընթացների զարգացմանը։</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2 class="text-center mb-4">Մեր Ծառայությունները</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="media/icon1.webp" alt="Education">
+                        <h3>Կրթություն</h3>
+                        <p>Կրթական ծրագրեր 1.5-6 տարեկան երեխաների համար։</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="/media/icon2.webp" alt="Playground">
+                        <h3>Խաղահրապարակ</h3>
+                        <p>Անվտանգ խաղահրապարակ և ֆետինե պատվածություն։</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="media/icon3.webp" alt="Nutrition">
+                        <h3>Սնունդ</h3>
+                        <p>Հավասարակշռված սնունդ սննդաբանների հսկողությամբ։</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="media/icon4.webp" alt="Care">
+                        <h3>Խնամք</h3>
+                        <p>Անհատական խնամք և ուշադրություն։</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <section style="background-image: url(media/decoration2.png); 
+                height: 250px;  
+                background-repeat: no-repeat; 
+                background-position: center; 
+                background-size: contain;
+                display: flex; 
+                align-items: center; 
+                justify-content: center;  
+                position: relative;">
+</section>
+
+    <section id="groups" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Խմբեր</h2>
+            <ul class="list-unstyled row row-cols-1 row-cols-md-4 g-4">
+                <li class="col">
+                    <div class="group-item">
+                        <img src="media/child3.webp" alt="2-3 Բացահայտողներ Հետազոտողներ" class="group-image">
+                        <span class="group-text">2-3 Բացահայտողներ Հետազոտողներ</span>
+                    </div>
+                </li>
+                <li class="col">
+                    <div class="group-item">
+                        <img src="media/child4.webp" alt="3-4 Հեքիաթասացներ" class="group-image">
+                        <span class="group-text">3-4 Հեքիաթասացներ</span>
+                    </div>
+                </li>
+                <li class="col">
+                    <div class="group-item">
+                        <img src="media/child5.webp" alt="4-5 Ստեղծարարներ" class="group-image">
+                        <span class="group-text">4-5 Ստեղծարարներ</span>
+                    </div>
+                </li>
+                <li class="col">
+                    <div class="group-item">
+                        <img src="media/child6.webp" alt="5-6 Գիտունիկներ" class="group-image">
+                        <span class="group-text">5-6 Գիտունիկներ</span>
+                    </div>
+                </li>
+            </ul>
+            <div id="groupModal" class="group-modal">
+  <div class="group-modal-content">
+    <span class="group-modal-close" onclick="closeGroupModal()">&times;</span>
+    <div class="group-modal-body">
+      <img id="groupModalImage" src="" alt="Group" class="group-modal-image">
+      <div class="group-modal-text">
+        <h3 id="groupModalTitle"></h3>
+        <p id="groupModalDescription"></p>
+    <button class="btn btn-teal" onclick="openRequestFromGroup()">Դիմել հիմա</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+    </section>
+    <section class="londonbusphoto">
+        <img src="media/bus-foto.png" alt="">
+    </section>
+ <section class="yellowsection">
+    <h2>Ամրագրեք ձեր երեխայի տեղը</h2>
+    <h1>London Bus</h1>
+    <h2 class="phone-number">+374 44 33 33 13</h2>
+    <button onclick="openModal()">ուղարկել հայտ</button>
+    <div class="yellow-block-sky">
+        <img src="/media/decoration3.png" alt="Decoration">
+    </div>
+</section>
+
+    <section class="gallery-section">
+        <h2 class="gallery-title">Մեր օրը</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="/media/child2.webp" alt="Day 1"></div>
+            <div class="gallery-item"><img src="/media/child3.webp" alt="Day 2"></div>
+            <div class="gallery-item"><img src="/media/child4.webp" alt="Day 3"></div>
+            <div class="gallery-item"><img src="/media/child5.webp" alt="Day 4"></div>
+            <div class="gallery-item"><img src="/media/child6.webp" alt="Day 5"></div>
+            <div class="gallery-item"><img src="/media/child7.webp" alt="Day 6"></div>
+            <div class="gallery-item"><img src="/media/child8.webp" alt="Day 7"></div>
+            <div class="gallery-item"><img src="/media/child9.webp" alt="Day 8"></div>
+            <div class="gallery-item"><img src="/media/child10.webp" alt="Day 9"></div>
+            <div class="gallery-item"><img src="/media/child11.webp" alt="Day 10"></div>
+            <div class="gallery-item"><img src="/media/child12.webp" alt="Day 11"></div>
+            <div class="gallery-item"><img src="/media/child13.webp" alt="Day 12"></div>
+            <div class="gallery-item"><img src="/media/child14.webp" alt="Day 13"></div>
+            <div class="gallery-item"><img src="/media/child15.webp" alt="Day 14"></div>
+            <div class="gallery-item"><img src="/media/child16.webp" alt="Day 15"></div>
+            <div class="gallery-item"><img src="/media/child17.webp" alt="Day 16"></div>
+            <div class="gallery-item"><img src="/media/child18.webp" alt="Day 17"></div>
+            <div class="gallery-item"><img src="/media/child19.webp" alt="Day 18"></div>
+            <div class="gallery-item"><img src="/media/child20.webp" alt="Day 19"></div>
+            <div class="gallery-item"><img src="/media/child21.webp" alt="Day 20"></div>
+            <div class="gallery-item"><img src="/media/child22.webp" alt="Day 21"></div>
+            <div class="gallery-item"><img src="/media/child23.webp" alt="Day 22"></div>
+            <div class="gallery-item"><img src="/media/child24.webp" alt="Day 23"></div>
+            <div class="gallery-item"><img src="/media/child25.webp" alt="Day 24"></div>
+        </div>
+        <div id="imageModal" class="image-modal">
+  <span class="close-image" onclick="closeImageModal()">&times;</span>
+  <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+  <span class="next" onclick="changeImage(1)">&#10095;</span>
+  <div class="image-modal-content">
+    <img id="modalImage" src="" alt="Full Image">
+  </div>
+</div>
+    </section>
+    <section id="admission" class="py-5 bg-light">
+        <img src="media/rainbow.png" class="floating-img top-left" alt="Admission Decoration"
+            style="transform: translate(23.3667px, 26.876px);">
+        <div class="container">
+            <div>
+                <h2 class="section-title text-center">Ընդունելություն</h2>
+            </div>
+        </div>
+        <div class="container-left">
+            <div class="comment-block">
+                <div class="comment-cards">
+                    <div class="comment-card">
+                        <div class="star-foto-block">
+                            <div class="comment-info">
+                                <p>Լոնդոն Բաս մանկապարտեզը ընդունում է 1․5–6 տարեկան երեխաների՝ ՀՀ քաղաքացիների և
+                                    օտարերկրացիների։</p>
+                            </div>
+                            <div class="comment-card-foto">
+                                <div class="comment-card-img">
+                                </div>
+                                <div class="star-rating-block">
+                                    <h3 class="comment-name">Պայմաններ</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-card">
+                        <div class="star-foto-block">
+                            <div class="comment-info">
+                                <ul>
+                                    <p>Այցի ամրագրում և պայմանների ծանոթացում, հոգեբանի հետ հանդիպում։</p>
+                                    <p>Ադապտացիայի շրջան (5–10 օր)։</p>
+                                    <p>Պայմանագրի կնքում։</p>
+                                </ul>
+                            </div>
+                            <div class="comment-card-foto">
+                                <div class="comment-card-img">
+                                </div>
+                                <div class="star-rating-block">
+                                    <h3 class="comment-name">Ընթացակարգ</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-card">
+                        <div class="star-foto-block">
+                            <div class="comment-info">
+                                <ul>
+                                    <p>Ծնողի անձնագիր և սոց․ քարտի պատճեն</p>
+                                    <p>Երեխայի 3×4 լուսանկար (1 հատ)</p>
+                                    <p>Երեխայի անձնագիր/ծննդյան վկայական և սոց․ քարտի պատճեն</p >
+                                </ul>
+                            </div>
+                            <div class="comment-card-foto">
+                                <div class="comment-card-img">
+                                </div>
+                                <div class="star-rating-block">
+                                    <h3 class="comment-name">Անհրաժեշտ Փաստաթղթեր</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Ուղարկել Հայտ</h2>
+        <form id="requestForm">
+            <label for="name">Անուն *</label>
+            <input type="text" id="name" name="name" placeholder="Անուն" required>
+
+            <label for="surname">Ազգանուն *</label>
+            <input type="text" id="surname" name="surname" placeholder="Ազգանուն" required>
+
+            <label for="account">Հեռ *</label>
+            <input type="text" id="account" name="account" placeholder="Հեռ" required>
+
+            <label for="email">Էլ. փոստ *</label>
+            <input type="email" id="email" name="email" placeholder="Էլ. փոստ" required>
+
+            <label for="message">Հաղորդագրություն *</label>
+            <textarea id="message" name="message" placeholder="Գրեք ձեր հաղորդագրությունը..." required></textarea>
+
+            <button type="button" onclick="submitRequest()">Ուղարկել Հայտ</button>
+        </form>
+    </div>
+</div>
+    <section class="py-5">
+        <div class="container">
+            <div class="image-text-container">
+                <img src="media/about.png" alt="FAQ Image" class="faq-image">
+                <div class="faq-content">
+                    <h2 class="section-title">Հաճախ տրվող հարցեր</h2>
+                    <div class="accordion accordion-flush mt-4" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                                    Ո՞ր տարիքի երեխաներին է ընդունում «Լոնդոն Բաս» մանկապարտեզը
+                                </button>
+                            </h2>
+                            <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Մենք ընդունում ենք 1․5-ից մինչև 6 տարեկան երեխաների՝ և՛ ՀՀ
+                                    քաղաքացիների, և՛ օտարերկրացիների։ Յուրաքանչյուր տարիքային խմբի համար գործում են
+                                    հատուկ ծրագրեր, որոնք նպաստում են երեխայի համակողմանի զարգացմանը։</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                    Ի՞նչ պայմաններ է առաջարկում մանկապարտեզը երեխաների համար։
+                                </button>
+                            </h2>
+                            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Մեր մանկապարտեզը ունի ընդարձակ և լուսավոր խմբասենյակներ,
+                                    առանձին սանհանգույցներ, մարզադահլիճ և խոհանոց։ Բացի այդ՝ երեխաների անվտանգության և
+                                    հարմարավետության համար ստեղծված են բնական խոտածածկ տարածքներ, ռետինապատ խաղահրապարակ
+                                    և աստիճանավանդակների բացակայություն։</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                    Ինչպե՞ս է կազմակերպված սնունդը մանկապարտեզում։
+                                </button>
+                            </h2>
+                            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Սնունդը մշակված է սննդաբանների կողմից և ներառում է լիարժեք
+                                    ուտեստներ․ նախաճաշ, երկրորդ նախաճաշ (միրգ), ճաշ և հետճաշիկ։ Մենք կարևորում ենք առողջ
+                                    և հավասարակշբծ սննդակարգը։</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                    Ինչպե՞ս է կատարվում ընդունելության գործընթացը։
+                                </button>
+                            </h2>
+                            <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Ընդունելությունը կատարվում է մի քանի քայլով․ նախօրոք
+                                    ամրագրվում է այց, կազմակերպվում է էքսկուրսիա և պայմանների ծանոթացում, հանդիպում
+                                    մանկապարտեզի հոգեբանի հետ, ապա անց է կացվում ադապտացիայի շրջան (5-10 օր)։ Վերջում
+                                    կնքվում է պայմանագիր ծնողի և մանկապարտեզի միջև։</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-5" style="background-color: #26A69A;">
+        <div class="container text-center">
+            <div class="container">
+                <div class="map-contact-block">
+                    <div class="footer-soc-block">
+                        <div class="map-contact">
+                            <div class="footer-logo">
+                                <p class="call-text">Պատվիրել զանգ</p>
+                                <p class="footer-logo-text">LONDON BUS</p>
+                            </div>
+                            <a href="tel:+374 (44)33-33-13" class="footer-number">+374 (44)33-33-13</a>
+                            <div class="footer-modal">
+                                <button class="modal-open-btn-new" onclick="openModal()">Ուղարկել հայտ</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="map-block">
+                        <iframe
+                            src="https://yandex.com/map-widget/v1/?ll=44.553113%2C40.218463&amp;mode=whatshere&amp;utm_source=share&amp;whatshere%5Bpoint%5D=44.553300%2C40.218564&amp;whatshere%5Bzoom%5D=19.26&amp;z=17.8"
+                            width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
+                        </iframe>
+                    </div>
+                    
+                </div>
+                <br>
+                <div class="footer-information">
+            <div>
+                <a>Հայաստան Երևան Ծարավ Աղբյուր 61/4</a>
+            </div>
+            <div>
+                <a href="mailto:londonbus.kg.25@gmail.com">londonbus.kg.25@gmail.com</a>
+            </div>
+            <div>
+                <a href="tel:+374 (44)33-33-13" class="footer-number">+374 (44)33-33-13</a>
+            </div>
+
+                            <div class="social-media">
+                    <div>Հետևել մեզ</div>
+                    <div class="social-icon-block">
+                                                    <a href="https://www.facebook.com/share/16mpebAyCw/?mibextid=wwXIfr" target="_blank">
+                                <img src="https://london-bus.am/storage/media/socials/thumbnail/2jon-fb.webp" alt="Facebook">
+                            </a>
+                                                    <a href="https://www.instagram.com/london_bus_kindergarten?igsh=YXl2djQzbno5YmYx" target="_blank">
+                                <img src="https://london-bus.am/storage/media/socials/thumbnail/ycav-insta.webp" alt="Instagram">
+                            </a>
+                                            </div>
+                </div>
+                    </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="text-center py-4 bg-dark text-white">
+        
+        <p>© 2025 Լոնդոն Բաս Մանկապարտեզ</p>
+    </footer>
+<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.js"></script>
+</body>
+
+</html>
